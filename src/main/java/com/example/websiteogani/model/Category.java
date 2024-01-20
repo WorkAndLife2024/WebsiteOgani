@@ -11,6 +11,6 @@ public class Category {
     @Column(name = "categoryName", columnDefinition = "nvarchar(100)")
     private String categoryName;
     @ManyToOne
-    @JoinColumn(name = "Item", referencedColumnName = "itemName")
+    @JoinColumn(name = "Item", referencedColumnName = "idItem")
     private Item idItem;
 }

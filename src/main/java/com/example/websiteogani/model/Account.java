@@ -24,6 +24,6 @@ public class Account {
     private LocalDateTime dateCreate;
     private LocalDateTime lastLogin;
     @ManyToOne
-    @JoinColumn(name = "Role",referencedColumnName = "roleName")
+    @JoinColumn(name = "Role",referencedColumnName = "idRole")
     private Role roleName;
 }
